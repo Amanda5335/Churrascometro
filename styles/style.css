@@ -1,0 +1,46 @@
+* {
+    font-family: roboto;
+}
+
+body {
+    background-image: url('https://bigdelivery-assets-sales-production.s3-sa-east-1.amazonaws.com/spree/images/1711/large/bigdelivery_KIT_CHURRASCO_TRADICIONAL.png?1650554387');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+}
+
+.container {
+    max-width: 300px;
+    margin: auto;
+    background-color: rgb(94, 36, 13);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: 10px 5;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border: rgb(220, 220, 220);
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(250, 171, 145);
+    color: #fff;
+    font-size: 15;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.results {
+    color: #fff;
+}
