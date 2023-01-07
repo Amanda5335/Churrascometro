@@ -1,21 +1,23 @@
-// carne - 400 gr por pessoa  + de 6h - 650 gr
-// cerveja - 1200 ml por pessoa  + 6h - 2000ml
-// refrigerante - 1000ml por pessoa  + 6h 1500ml
-// crianças valem por 0,5 
 
-let inputAdultos = (document.getElementById("#adultos"))
-let inputCriancas = (document.getElementById("#criancas"));
-let inputDuracao = (document.getElementById("#duracao"));
-
-let resultado = (document.getElementById("#resultado"));
+let inputAdultos = document.getElementById("adultos")
+let inputCriancas = document.getElementById("criancas")
+let inputDuracao = document.getElementById("duracao")
 
 function calcular() {
-    console.log("Calculando...");
+    if (inputAdultos === null) return
+    if (inputCriancas === null) return
+    if (inputDuracao === null) return
 
 
     let adultos = inputAdultos.value;
     let criancas = inputCriancas.value;
     let duracao = inputDuracao.value;
+
+    console.log(adultos);
+
+    if (adultos === "") return
+    if (criancas === "") return
+    if (duracao === "") return
 
     let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas); let qdtTotalCerveja = cervejaPP(duracao) * adultos;
     let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
@@ -58,3 +60,4 @@ function bebidasPP(duracao) {
         return 1000
     }
 }
+

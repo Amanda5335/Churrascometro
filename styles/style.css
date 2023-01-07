@@ -33,9 +33,9 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: rgb(250, 171, 145);
+    background-color: rgb(245, 164, 137);
     color: #fff;
-    font-size: 15;
+    font-size: 16;
     border: none;
     border-radius: 10px;
     cursor: pointer;
